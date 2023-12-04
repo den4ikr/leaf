@@ -1,0 +1,39 @@
+.card {
+  height: 20vh;
+  display: flex;
+  background: #e6f3e9;
+  box-shadow: #00000059 0px 5px 15px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.image {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.textBlock {
+  padding: 0px 0px 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.type {
+  font-weight: 300;
+  color: rgba(138, 174, 146, 1);
+  font-size: 14px;
+}
+
+.name {
+  color: rgba(33, 91, 43, 1);
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.price {
+  color: rgba(33, 91, 43, 1);
+  font-weight: 400;
+  font-size: 16px;
+}

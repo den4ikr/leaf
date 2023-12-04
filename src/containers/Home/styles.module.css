@@ -1,0 +1,117 @@
+/* @keyframes wave {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+} */
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1600px;
+  }
+}
+
+.container {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  background: url("../../assets/homePage.svg");
+  position: absolute;
+  width: 6000px;
+  bottom: 0;
+  left: 0;
+  height: 45vh;
+  /* animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite; */
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.root {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: #d0e4da;
+  height: inherit;
+}
+
+.main {
+  flex-basis: 50%;
+  min-height: 50%;
+  padding-top: 60px;
+}
+
+.title {
+  font-weight: 600;
+  color: rgba(33, 91, 43, 1);
+  text-align: center;
+  font-size: 27px;
+}
+
+.subTextRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  column-gap: 30px;
+  margin-top: -20px;
+}
+
+.text {
+  font-size: 20px;
+  color: rgba(90, 149, 121, 1);
+}
+
+.logoBlock {
+  position: relative;
+  height: 302px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  z-index: 0;
+  align-items: center;
+}
+
+.logoBlock::before {
+  content: "";
+  position: absolute;
+  background-image: url("../../assets/logoLeaf.svg");
+  width: 100%;
+  height: 302px;
+  left: 55px;
+  top: -20px;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.logoText {
+  display: flex;
+  justify-content: center;
+  transform: translateY(-70px);
+  z-index: 1;
+}
+
+.bottomBlock {
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 180px;
+}
+
+.mainButton {
+  background: #fff;
+  color: rgba(90, 149, 121, 1);
+  width: 297px;
+  height: 60px;
+  font-size: 20px;
+  font-weight: 600;
+}

@@ -1,0 +1,78 @@
+/* @keyframes draw {
+  50% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 9960;
+  }
+}
+
+svg path:last-child {
+  stroke-dashoffset: 9960;
+  stroke-dasharray: 9960;
+  /* fill: #5a9579; */
+/* stroke-width: 0.5; */
+/* animation: draw 5s infinite; */
+/* }  */
+
+@keyframes leftLeaf {
+  from {
+    transform: translate(-100vw, 0px);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes rightLeaf {
+  from {
+    transform: translate(100vw, 0px);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.leaf-icon {
+  width: 100vw;
+  opacity: 0;
+  animation: fadeIn 1s forwards 1s;
+}
+
+.leaf-icon path:first-child {
+  transform: translate(-100vw, 0px);
+  animation: leftLeaf 1s forwards 1s;
+}
+
+.leaf-icon path:nth-child(2) {
+  transform: translate(100vw, 0px);
+  animation: rightLeaf 1s forwards 1.7s;
+}
+
+.leaf-icon path:nth-child(3) {
+  transform: translate(-100vw, 0px);
+  animation: leftLeaf 1s forwards 1.9s;
+}
+
+.leaf-icon path:nth-child(4) {
+  transform: translate(-100vw, 0px);
+  animation: rightLeaf 1s forwards 2.2s;
+}
+
+.leaf-icon path:nth-child(5) {
+  transform: translate(0, -100vh);
+  animation: rightLeaf 1s forwards 1.3s;
+}
